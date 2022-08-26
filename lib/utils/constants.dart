@@ -8,3 +8,4 @@ import 'package:flutter/material.dart';
    const  kYellowColor = Color(0xFFF2A33A);
    const  kWhiteColor = Color(0xFFFFFFFF);
    const  kGreyColor = Color(0xFF767680);
+   const  kLoginColor = Color(0xFF09FBD3);

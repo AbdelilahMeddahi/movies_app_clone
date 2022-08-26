@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:movies_app_clone/components/unicorne_outline_button.dart';
+import 'package:movies_app_clone/screens/sign_in_screen.dart';
 
 import '../utils/constants.dart';
 
@@ -129,47 +130,52 @@ class OnBoardingScreen extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: screenHeight * 0.03,
+                      height: screenHeight * 0.08,//it was 0.03
                     ),
-                    CustomOutlineButton(
-                      strokeWidth: 3,
-                      radius: 20,
-                      width: 160,
-                      height: 40,
-                      padding: EdgeInsets.all(3),
-                      gradient: LinearGradient(
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                        colors: [
-                          kPinkColor,
-                          kGreenColor,
-                        ],
-                      ),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          gradient: LinearGradient(
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
-                            colors: [
-                              kPinkColor.withOpacity(0.5),
-                              kGreenColor.withOpacity(0.5),
-                            ],
-                          ),
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => SignInScreen()));
+                      },
+                      child: CustomOutlineButton(
+                        strokeWidth: 3,
+                        radius: 20,
+                        width: 160,
+                        height: 40,
+                        padding: EdgeInsets.all(3),
+                        gradient: LinearGradient(
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                          colors: [
+                            kPinkColor,
+                            kGreenColor,
+                          ],
                         ),
-                        child: Center(
-                          child: Text(
-                            'Sign Up',
-                            style: TextStyle(
-                              fontSize: 14,
-                              color: kWhiteColor,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            gradient: LinearGradient(
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomRight,
+                              colors: [
+                                kPinkColor.withOpacity(0.5),
+                                kGreenColor.withOpacity(0.5),
+                              ],
+                            ),
+                          ),
+                          child: Center(
+                            child: Text(
+                              'Sign Up',
+                              style: TextStyle(
+                                fontSize: 14,
+                                color: kWhiteColor,
+                              ),
                             ),
                           ),
                         ),
                       ),
                     ),
                     Spacer(),
-                    Row(
+                    /*Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: List.generate(
                         3,
@@ -187,7 +193,7 @@ class OnBoardingScreen extends StatelessWidget {
                           );
                         },
                       ),
-                    ),
+                    ),*/
                     SizedBox(height: screenHeight*0.025,),
                   ],
                 ),
