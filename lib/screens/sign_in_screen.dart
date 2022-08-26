@@ -93,8 +93,23 @@ class SignInScreen extends StatelessWidget {
                         style: TextStyle(color: kLoginColor),
                         cursorColor: kLoginColor,
                         decoration: InputDecoration(
+                            iconColor: kLoginColor,
+                            floatingLabelStyle: TextStyle(color: kLoginColor),
+                            hintStyle: TextStyle(color: kLoginColor),
+                            labelStyle: TextStyle(color: kLoginColor),
+                            prefixIconColor: kLoginColor,
+                            fillColor: kLoginColor,
+                            enabledBorder: OutlineInputBorder(
+                              borderSide: BorderSide(color: kLoginColor),
+                            ),
+                            focusedBorder: OutlineInputBorder(
+                              borderSide: BorderSide(color: kLoginColor),
+                            ),
+                            border: OutlineInputBorder(
+                              borderSide: BorderSide(color: kLoginColor),
+                            ),
                             labelText: 'Email',
-                            prefixIcon: Icon(Ionicons.mail_outline),
+                            prefixIcon: Icon(Ionicons.mail_outline,color: kLoginColor,),
                             hintText: 'Enter valid mail id as abc@gmail.com'),
                       ),
                     ),
@@ -105,9 +120,23 @@ class SignInScreen extends StatelessWidget {
                         style: TextStyle(color: kLoginColor),
                         obscureText: true,
                         decoration: InputDecoration(
-                            border: OutlineInputBorder(),
+                            iconColor: kLoginColor,
+                            floatingLabelStyle: TextStyle(color: kLoginColor),
+                            hintStyle: TextStyle(color: kLoginColor),
+                            labelStyle: TextStyle(color: kLoginColor),
+                            prefixIconColor: kLoginColor,
+                            fillColor: kLoginColor,
+                            enabledBorder: OutlineInputBorder(
+                              borderSide: BorderSide(color: kLoginColor),
+                            ),
+                            focusedBorder: OutlineInputBorder(
+                              borderSide: BorderSide(color: kLoginColor),
+                            ),
+                            border: OutlineInputBorder(
+                              borderSide: BorderSide(color: kLoginColor),
+                            ),
                             labelText: 'Password',
-                            prefixIcon: Icon(Ionicons.lock_closed_outline),
+                            prefixIcon: Icon(Ionicons.lock_closed_outline,color: kLoginColor,),
                             hintText: 'Enter your secure password'),
                       ),
                     ),
